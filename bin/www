@@ -1,0 +1,7 @@
+#!/usr/bin/env node
+var app = require('../app');
+var startServer = require('../server').startServer;
+
+app.set('port', process.env.PORT || 3000);
+
+var server = startServer(app);
