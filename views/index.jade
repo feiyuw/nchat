@@ -2,7 +2,7 @@ extends layout
 
 block content
     ul#messages
-    form(action="")
-        input(autocomplete="off")#m
+    form(action="")#chat
+        input(autocomplete="off", placeHolder="Type here")#m
         button="Send"
     script(src='/javascripts/client.js')
